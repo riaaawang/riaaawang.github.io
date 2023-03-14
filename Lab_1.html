@@ -34,7 +34,7 @@
     
     <h2>Example 2: Serial</h2>
     <iframe width="560" height="315" src="https://youtube.com/shorts/ZysTG3YbnTE?feature=share" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <img src="Riaaawang.github.io/Pictures/Lab1_1." alt="Image Description">
+    
     <p>https://youtube.com/shorts/ZysTG3YbnTE?feature=share</p>
     <p>The second example involved running the Artemis Serial example code to test the serial port. The baud rate was set to 115200, which is a common rate used in many serial communication applications. The serial monitor was used to confirm that the text typed in was echoed back, indicating that serial communication was functioning properly. This example demonstrated how to set up basic input and output functionality over a serial port.</p>
     
@@ -44,8 +44,16 @@
     <p>The third example involved using the Artemis Analog Read example code to read the onboard temperature sensor. The temperature reading began at approximately 31,800 and increased to over 32,000 when the sensor was exposed to the heat release vent of a laptop, confirming the functioning of the sensor and the analog-to-digital converter (ADC). This example demonstrated how to read analog values from sensors and use them in your program.</p>
     
     <h2>Example 4: Microphone</h2>
-    <img src="path/to/image.jpg" alt="Image Description">
-    <p>The fourth and final example involved testing the onboard microphone. The Microphone Output example code was used to print out the loudest frequency after performing a fast Fourier transform (FFT). The highest frequency ranged from 0 to about 200 due to ambient noise, but when a beep was played, the frequency consistently hit 1007. This example demonstrated how to use more advanced signal processing techniques to analyze data from sensors.</p>
+    <img src="../Pictures/Lab1_1.jpg" alt="Image Description" width = "300" height = "400">
+    <img src="../Pictures/Lab1_2.jpg" alt="Image Description" width = "300" height = "500">
+    <p>Firgure 1 shows the reaction of my board during 430 Hz. </p>
+    <p>Figure 2 shows the reaction of my board during not 430 Hz</p>
+    <p>As part of the lab exercise, I utilized the Example1_MicrophoneOutput code under the PDM of Arduino Example to test the onboard microphone of the Sparkfun Artemis board. The code was designed to print out the loudest frequency after performing a Fast Fourier Transform (FFT) on the audio signal captured by the microphone.</p>
+    <p> During testing, I decided to extend the functionality of the code by incorporating a visual indicator that would turn on and off based on the frequency of the audio signal detected by the microphone. Specifically, I added code to the printLoudest function that would light up the blue LED on the board when an A note (which ideally has a frequency of around 440hz) was played over the speaker. The intention was to use the LED as a simple visual cue to help distinguish different audio signals and frequencies.</p>
+    <p>However, during testing, I discovered that the board recognized the frequency of the A note I played as 434 hz instead of the expected 440hz. This deviation in frequency could be attributed to factors such as the performance of the microphone and the FFT algorithm used in the code.
+    </p>
+    <p>To account for this deviation, I modified the condition in the code that lights up the blue LED to frequencies under 434hz, instead of the expected 440hz. Upon testing, I found that the modification worked as expected and the LED lit up when I played notes in the appropriate frequency range, and turned off otherwise. </p>
+    
     <h2>Conclusion</h2>
     <p>In conclusion, this lab provided an excellent introduction to programming the Sparkfun Artemis. By completing the four examples, we gained familiarity with basic functionality such as serial communication, analog readings, and microphone output. These skills will be useful in future labs and projects as we continue to develop our knowledge of robotics and programming.
         </p>
