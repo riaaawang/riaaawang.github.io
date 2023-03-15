@@ -316,22 +316,95 @@
                         </div>
                     </div>
 
+
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Lab Tasks</h3>
                             <div class="subheading mb-3">1. Configurations</div>
                             <p>In Pre-lab, we have to find and change the UUID and Artemis Address, then change those on the ble_service, and make RX_STRING ID matches with TX_STRING value in arduino, so the Artemnis can communicate with computer.</p>
-                            
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <div class="subheading mb-3">2. demo.ipynb</div>
+                            <p>goes well!</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">3. Send and Receive ECHO command</div>
                             <p>The ECHO command is a useful tool for verifying that data is being transmitted correctly to the Artemis board. 
                                 To enable the ECHO command, it is necessary to add it to the Command Types in the Artemis code and the cmd_types.py file. Additionally, a case statement must be added to the Artemis code to send a characteristic string containing the word "Echo." In the provided image, the ECHO command is transmitted to the Artemis, and the message is received from the Artemis board as shown. This allows us to confirm that data is being transmitted correctly between the host computer and the Artemis board.</p>
-                            <img src="./assets/img/lab2/lab22.png" alt="Description of the image" width="400" height="440">
+                            <img src="./assets/img/lab2/lab22.png" alt="Description of the image" width="520" height="440">
                             <img src="./assets/img/lab2/lab23.png" alt="Description of the image" width="500" height="200">
                             <p>Thess graph above shows that I am able to run all the cells befpre carrying out the lab tasks.</p>
-                            <p> </p>
-                            <p> </p>
-                            <p> </p>
+                            
                         </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">4. Get Time Command </div>
+                            <p> For this task, I wrote a new case and assigned a new veriable.
+                            </p>
+                            <img src="./assets/img/lab2/lab24.png" alt="Description of the image" width="400" height="70">
+                            <img src="./assets/img/lab2/lab25.png" alt="Description of the image" width="500" height="250">
+                            <p> And re-wrote the get value function on jupyter lab
+                            </p>
+                            <img src="./assets/img/lab2/lab26.png" alt="Description of the image" width="500" height="250">
+                            <p> T:259792
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">5. Notification Handler</div>
+                            <img src="./assets/img/lab2/lab27.png" alt="Description of the image" width="400" height="120">
+                            <p> In order to process the string data received from the Artemis board, we will need to design a new function that will be able to parse the data and extract the relevant information. (I call it "noti") The data received from the Artemis board will be in the format of a string with a colon separating the different components. The second part of this string will be the value of time without any prefix.
+                            </p>
+                            <p>
+                                To handle the incoming string data, we will use the ble.start_notify() function. This function will ensure that our "noti" function is automatically called whenever a new string is received, allowing us to efficiently and continuously process the incoming data. By splitting the incoming string using the colon as a delimiter, we can extract the relevant time data and use it for further processing or analysis as needed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">6. Get Temperature Command</div>
+                            <img src="./assets/img/lab2/b5d086ae1c42bcc9be9213d13f46763.png" alt="Description of the image" width="400" height="370">
+                            <img src="./assets/img/lab2/97154268913d50d5f18d19b384239a8.png" alt="Description of the image" width="400" height="320">
+                            <p> Value: Time:889760&Temp:85.201&Time:889760&Temp:85.201&Time:889765&Temp:85.379&Time:889760&Temp:85.201&Time:889765&Temp:85.379&
+                                Time:889770&Temp:85.315&Time:889760&Temp:85.201&Time:889765&Temp:85.379&Time:889770&Temp:85.315&Time:889775&Temp:85.407&Time:889760 &Temp:85.201&Time:889765&Temp:85.379&Time:889770&Temp:85.315&Time:889775&Temp:85.407&Time:889780&Temp:85.412&</p>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">7. Limitations</div>
+                        <p>In this task, we need to do more based on the last one. As we can see, last one has turned a result to a series of strings that is not easy for people to look at the value. Now we will renew each data, so we can only see the newest version</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">8. Effective Data Rate and Overhead</div>
+                            
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">9. Reliability</div>
+                            
+                            
+                        </div>
+                    </div>
+
+
                     </div>
                     
                     
