@@ -206,6 +206,7 @@
             <section class="resume-section" id="lab1">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Lab 1</h2>
+                    <div class="subheading mb-3">Artemis, Make and Share you Github Page</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Introduction</h3>
@@ -250,6 +251,8 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Example 4: Microphone</h3>
+                            <img src="./assets/img/939cd09c2a0b13523a98d0edb2174af.jpg" alt="Description of the image" width="300" height="540"><p>Light on at 434 Hz</p>
+                            <img src="./assets/img/8c58e2ab7a04075084f5b6a54e81085.jpg" alt="Description of the image" width="300" height="540"><p>Light off at other frequency</p>
                             <p>As part of the lab exercise, I utilized the Example1_MicrophoneOutput code under the PDM of Arduino Example to test the onboard microphone of the Sparkfun Artemis board. The code was designed to print out the loudest frequency after performing a Fast Fourier Transform (FFT) on the audio signal captured by the microphone.</p>
                             <p>During testing, I decided to extend the functionality of the code by incorporating a visual indicator that would turn on and off based on the frequency of the audio signal detected by the microphone. Specifically, I added code to the printLoudest function that would light up the blue LED on the board when an A note (which ideally has a frequency of around 440hz) was played over the speaker. The intention was to use the LED as a simple visual cue to help distinguish different audio signals and frequencies.</p>
                             <p>However, during testing, I discovered that the board recognized the frequency of the A note I played as 434 hz instead of the expected 440hz. This deviation in frequency could be attributed to factors such as the performance of the microphone and the FFT algorithm used in the code.</p>
