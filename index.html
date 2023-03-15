@@ -64,7 +64,7 @@
             <hr class="m-0" />
 
             <!-- Educations-->
-            <section class="resume-section" id="educations">
+            <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">educations</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -303,14 +303,31 @@
                             <p>3. Installing necessary packages and Setup Informations: We will need to install several Python packages to communicate with the Artemis board over Bluetooth. Then find out the UUID and artemis address for my device.</p>
                             <p>4. Downloading and extracting the codebase: We will need to download and extract the codebase for the lab exercise, which includes both Arduino .ino files and Python scripts.</p>
 
-                            <p>By completing these setup tasks, we will be ready to explore Bluetooth communication with the Artemis board and perform the lab exercises. Connecting the Artemis to the computer, and make sure they can communicate (as shown on figures).</p>
+                            <p>By completing these setup tasks, we will be ready to explore Bluetooth communication with the Artemis board and perform the lab exercises. Connecting the Artemis to the computer, and make sure they can communicate (as shown on figures above).</p>
                         </div>
                     </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Procedures</h3>
-                            <p> </p>
-                            <p> </p>
+                            <h3 class="mb-0">CodeBase</h3>
+                            <p>The ble_robot directory contains two subdirectories, ble_arduino and ble_python, which are essential components for setting up Bluetooth communication between the Artemis board and a host computer. The ble_arduino folder includes the .ino file and c header files, which must be uploaded to the Artemis board for establishing the Bluetooth connection. The ble_python folder contains several files, including a demo Jupyter Notebook, a .yaml file that assigns unique UUIDs for the Bluetooth connections, and cmd_types.py, which is a Python class that handles all the commands.</p>
+                            <p>To establish a Bluetooth connection, the UUIDs in the .yaml file on the computer side must match the UUIDs in the .ino file on the Arduino side. This is crucial for the BLE protocol to identify and pair the Bluetooth connection. By correctly matching the UUIDs, the Artemis board and the host computer can establish a secure and reliable Bluetooth communication channel. The Jupyter Notebook in the ble_python folder provides an easy-to-use interface for sending and receiving data over the Bluetooth connection, which allows users to control the Artemis board and perform various tasks remotely.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Lab Tasks</h3>
+                            <div class="subheading mb-3">1. Configurations</div>
+                            <p>In Pre-lab, we have to find and change the UUID and Artemis Address, then change those on the ble_service, and make RX_STRING ID matches with TX_STRING value in arduino, so the Artemnis can communicate with computer.</p>
+                            
+                            <div class="subheading mb-3">2. demo.ipynb</div>
+                            <p>The ECHO command is a useful tool for verifying that data is being transmitted correctly to the Artemis board. 
+                                To enable the ECHO command, it is necessary to add it to the Command Types in the Artemis code and the cmd_types.py file. Additionally, a case statement must be added to the Artemis code to send a characteristic string containing the word "Echo." In the provided image, the ECHO command is transmitted to the Artemis, and the message is received from the Artemis board as shown. This allows us to confirm that data is being transmitted correctly between the host computer and the Artemis board.</p>
+                            <img src="./assets/img/lab2/lab22.png" alt="Description of the image" width="400" height="440">
+                            <img src="./assets/img/lab2/lab23.png" alt="Description of the image" width="500" height="200">
+                            <p>Thess graph above shows that I am able to run all the cells befpre carrying out the lab tasks.</p>
                             <p> </p>
                             <p> </p>
                             <p> </p>
