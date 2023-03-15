@@ -209,6 +209,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Introduction</h3>
+
                             <p>The objective of this lab was to provide an introduction to programming the Sparkfun Artemis, a powerful microcontroller board that is widely used in the field of robotics. The lab consisted of setting up the Arduino IDE and running example code to test basic functionality. This report will detail the four examples that were completed during the lab, including Blink, Serial, Analog Read, and Microphone Output.</p>
                         </div>
                     </div>
@@ -216,6 +217,10 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Example 1: Blink It Up</h3>
+                            <video width="640" height="480" controls>
+                                <source src="./assets/img/example1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                             <p>The first example involved testing the LED on the Artemis board by blinking it using the "Blink" example from the Arduino IDE. The LED_BUILTIN pin in the code was mapped to the correct pin on the Artemis. A 1-second on and 1-second off pattern was used to confirm the basic functionality of the LED.</p>
                         </div>
 
@@ -223,13 +228,21 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Example 2: Serial</h3>
-                            <p>The second example involved running the Artemis Serial example code to test the serial port. The baud rate was set to 115200, which is a common rate used in many serial communication applications. The serial monitor was used to confirm that the text typed in was echoed back, indicating that serial communication was functioning properly. This example demonstrated how to set up basic input and output functionality over a serial port.</p>
+                            <video width="640" height="480" controls>
+                                <source src="./assets/img/f6c5d831d09f06808c0ceed90e2d6146.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>The second example involved running the Artemis Serial example code to test the serial port. The baud rate was set to 115200, which is a common rate used in many serial communication applications. The serial monitor was used to confirm that the text typed in was echoed back (shows in video), indicating that serial communication was functioning properly. This example demonstrated how to set up basic input and output functionality over a serial port.</p>
                         </div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Example 3: Analog Read</h3>
+                            <video width="640" height="480" controls>
+                                <source src="./assets/img/example3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                             <p>The third example involved using the Artemis Analog Read example code to read the onboard temperature sensor. The temperature reading began at approximately 31,800 and increased to over 32,000 when the sensor was exposed to the heat release vent of a laptop, confirming the functioning of the sensor and the analog-to-digital converter (ADC). This example demonstrated how to read analog values from sensors and use them in your program.</p>
                         </div>
                     </div>
@@ -243,7 +256,7 @@
                             <p>To account for this deviation, I modified the condition in the code that lights up the blue LED to frequencies under 434hz, instead of the expected 440hz. Upon testing, I found that the modification worked as expected and the LED lit up when I played notes in the appropriate frequency range, and turned off otherwise.</p>
                         </div>
                     </div>
-                    
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Conclusion</h3>
