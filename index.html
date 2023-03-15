@@ -382,8 +382,22 @@
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <div class="subheading mb-3">7. Limitations</div>
-                        <p>In this task, we need to do more based on the last one. As we can see, last one has turned a result to a series of strings that is not easy for people to look at the value. Now we will renew each data, so we can only see the newest version</p>
+                            <div class="subheading mb-3">6.5. Rapid Temp</div>
+                            <p>In this task, we need to do more based on the last one. As we can see, last one has turned a result to a series of strings that is not easy for people to look at the value. Now we will renew each data, so we can only see the newest version.</p>
+                            <img src="./assets/img/lab2/e7502f4e678b2e605fb9e89d0181690.png" alt="Description of the image" width="400" height="320">
+                            <p> Value: Time:89503&Temp:85.314&</p>
+
+                    
+                    
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">7. Limitation</div>
+                            <p>The Artemis board is equipped with a total of 384KB of RAM, which is equivalent to 384,000 bytes. To determine how much data can be transmitted without exceeding this memory limit, we need to consider the data size and transmission rate. In this case, each data point consists of 16 bits or 2 bytes, and the transmission rate is 150 HZ.</p>
+                            <p>Based on this information, we can calculate that in 5 minutes, which is equivalent to (560) seconds, we can transmit a total of (560)/(1/150) * 2 = 90,000 bytes of data. To transmit the maximum amount of data allowed by the memory limit of 384,000 bytes, we need to divide the memory limit by the data size and transmission rate to get the total number of transmission cycles. In this case, 384,000 / 90,000 = 4.267, which means that we can transmit 4.267 cycles of data in 5 minutes.</p>
+                            <p>Therefore, the total time required to transmit 384,000 bytes of data without exceeding the memory limit is 4.267 cycles multiplied by 5 minutes per cycle, which is equal to 1280 seconds. This means that we can safely transmit 16-bit data at a rate of 150 HZ for a duration of 1280 seconds without running out of memory on the Artemis board.</p>
                         </div>
                     </div>
 
